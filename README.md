@@ -1,7 +1,7 @@
 # com.mcast.res.yolov7
 Configuration for Yolov7
 
-# Setting up
+# Setting up on Windows 11 with native GPU support.
 - Download and install latest [Nvidia Video Driver](https://www.nvidia.com/download/index.aspx)
 
 **P.S.** Restart PC after this step
@@ -28,7 +28,7 @@ conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvi
 # Consider revising tensorboard version to <2.11 due to lack of native GPU support on Windows
 pip install -r requirements.txt
 pip install "tensorflow<2.11"
-conda install -c conda-forge wandb
+conda install -c conda-forge wandb # This would require further setting up, check useful links below
 conda install -c conda-forge nomkl # This is due to an error documented below. It will find conflicst and take long. Consider without first.
 conda clean --all
 ```
