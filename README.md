@@ -2,7 +2,7 @@
 Configuration for Yolov7
 
 # Setting up
-- Download and install latest Nvidia Drivers
+- Download and install latest [Nvidia Video Driver](https://www.nvidia.com/download/index.aspx)
 
 **P.S.** Restart PC after this step
 
@@ -10,8 +10,8 @@ Configuration for Yolov7
 
 **P.S.** Restart PC after this step
 
-- Download and install VS Studio Community, install C++ developer package
-- Download and install Anaconda/Miniconda
+- Download and install [Visual C++ via Microsoft Visual Studio Community](https://visualstudio.microsoft.com/vs/community/), install C++ developer package
+- Download and install [Anaconda](https://anaconda.org/)/[MiniConda](https://docs.conda.io/en/latest/miniconda.html)
 - Download or clone Yolo [https://github.com/WongKinYiu/yolov7](https://github.com/WongKinYiu/yolov7)
 - Download pretrained weights from repository page.
 
@@ -28,8 +28,6 @@ conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvi
 # Consider revising tensorboard version to <2.11 due to lack of native GPU support on Windows
 pip install -r requirements.txt
 pip install "tensorflow<2.11"
-conda install jupyter
-ipython kernel install --name "yolo-kernel" --user
 conda install -c conda-forge nomkl
 conda clean --all
 ```
@@ -48,3 +46,9 @@ gc.collect()
 
 - If getting queue empty error during train command set `--workers 0`
 
+- If getting MP: Error #15: Initializing libiomp5md.dll, but found libiomp5md.dll already initialized. There are two solutions: first installation of nomkl which should have already been done; secondly adding
+
+```
+import os
+os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
+```
