@@ -47,7 +47,7 @@ gc.collect()
 
 - [Empty Queue](https://github.com/ultralytics/yolov5/issues/1675): If getting queue empty error during train command, set `--workers 0`
 
-- If getting MP: Error #15: Initializing libiomp5md.dll, but found libiomp5md.dll already initialized. There are two solutions: first installation of nomkl which should have already been done; secondly adding
+- [libiomp5md.dll](https://stackoverflow.com/questions/20554074/sklearn-omp-error-15-initializing-libiomp5md-dll-but-found-mk2iomp5md-dll-a): If getting MP: Error #15: Initializing libiomp5md.dll, but found libiomp5md.dll already initialized. There are two solutions: first installation of nomkl which should have already been done; secondly adding
 
 ```
 import os
