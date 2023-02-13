@@ -3,14 +3,20 @@ Configuration for Yolov7
 
 # Setting up
 - Download and install latest Nvidia Drivers
+
 **P.S.** Restart PC after this step
+
 - Download and install [cuda](https://developer.nvidia.com/cuda-downloads)
+
 **P.S.** Restart PC after this step
+
 - Download and install VS Studio Community, install C++ developer package
 - Download and install Anaconda/Miniconda
 - Download or clone Yolo [https://github.com/WongKinYiu/yolov7](https://github.com/WongKinYiu/yolov7)
 - Download pretrained weights from repository page.
- **P.S.** Yolo should be in a git repository
+
+**P.S.** Yolo should be in a git repository
+
 - In command prompt check cuda version by running `nvcc -V`
 - Go to [PyTorch](https://pytorch.org/get-started/locally/) to get the command for your compatible version. Revise conda environment command below.
 - Create conda environment
@@ -34,8 +40,11 @@ conda clean --all
 
 # Troubleshooting
 - For memory issues open train.py in yolov7 and add the following code after line 479  as per https://github.com/WongKinYiu/yolov7/issues/735
-`torch.cuda.empty_cache()`
-`gc.collect()`
+
+```
+torch.cuda.empty_cache()
+gc.collect()
+```
 
 - If getting queue empty error during train command set `--workers 0`
 
