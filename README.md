@@ -12,7 +12,7 @@ Configuration for Yolov7
 
 - Download and install [Visual C++ via Microsoft Visual Studio Community](https://visualstudio.microsoft.com/vs/community/), install C++ developer package
 - Download and install [Anaconda](https://anaconda.org/)/[MiniConda](https://docs.conda.io/en/latest/miniconda.html)
-- Download or clone Yolo [https://github.com/WongKinYiu/yolov7](https://github.com/WongKinYiu/yolov7)
+- Download or clone [Yolo](https://github.com/WongKinYiu/yolov7)
 - Download pretrained weights from repository page.
 
 **P.S.** Yolo should be in a git repository
