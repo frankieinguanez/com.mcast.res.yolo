@@ -32,7 +32,7 @@ conda install -c conda-forge wandb # This would require further setting up, chec
 conda clean --all
 ```
 
-- To verify if PyTorch is using GPU type the following command that utilize [torch package](https://pytorch.org/docs/stable/tensor_attributes.html#torch.torch.device) in the Anaconda prompt with the respective conda environmnet activated:
+- To verify if PyTorch is using GPU type the following command that utilize [torch package](https://pytorch.org/docs/stable/tensor_attributes.html#torch.torch.device) in the Anaconda prompt with the respective conda environment activated:
 
 ```
 python
