@@ -1,3 +1,8 @@
+runs/
+*.pt
+models/__pycache__/
+utils/__pycache__/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -127,3 +132,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+*.pt
+*.pt
+*.pt
+yolov7-e6e.pt
