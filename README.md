@@ -73,5 +73,7 @@ import os
 os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
 ```
 
+- [Resuming training](https://github.com/ultralytics/yolov5/issues/911) and addressing [corrupt weights file](https://github.com/pytorch/pytorch/issues/31620): To resume training of a model should it stop for some reason use `python train.py --resume`. If a custom data option was provided then provide it again. If the following error occurs `PytorchStreamReader failed reading zip archive: failed finding central directory (no backtrace available)` than the last checkpoint is corrupted. Navigate to the weights folder in the run folder, delete `last.pt`, take the most recent epoch weights file, copy it and rename it to `last.pt`.
+
 # Useful links
 - [wandb](https://wandb.ai/)
