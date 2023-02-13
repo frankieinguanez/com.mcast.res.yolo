@@ -32,6 +32,26 @@ conda install -c conda-forge wandb # This would require further setting up, chec
 conda clean --all
 ```
 
+- To verify if PyTorch is using GPU type the following command that utilize [torch package](https://pytorch.org/docs/stable/tensor_attributes.html#torch.torch.device) in the Anaconda prompt with the respective conda environmnet activated:
+
+```
+python
+
+import torch
+
+# setting device on GPU if available, else CPU
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+print('Using device:', device)
+print()
+
+#Additional Info when using cuda
+if device.type == 'cuda':
+    print(torch.cuda.get_device_name(0))
+    print('Memory Usage:')
+    print('Allocated:', round(torch.cuda.memory_allocated(0)/1024**3,1), 'GB')
+    print('Cached:   ', round(torch.cuda.memory_reserved(0)/1024**3,1), 'GB')
+```
+
 - Test with following and check output in `runs` folder:
 
 `python detect.py --weights yolov7.pt --conf 0.25 --img-size 640 --source inference/images/horses.jpg --device 0`
