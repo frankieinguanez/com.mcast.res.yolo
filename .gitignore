@@ -3,6 +3,7 @@ runs/
 models/__pycache__/
 utils/__pycache__/
 wandb/
+*.bak
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -137,3 +138,4 @@ dmypy.json
 *.pt
 *.pt
 yolov7-e6e.pt
+requirements.txt.bak
