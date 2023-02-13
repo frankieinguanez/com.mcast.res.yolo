@@ -29,7 +29,6 @@ conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvi
 pip install -r requirements.txt
 pip install "tensorflow<2.11"
 conda install -c conda-forge wandb # This would require further setting up, check useful links below
-conda install -c conda-forge nomkl # This is due to an error documented below. It will find conflicst and take long. Consider without first.
 conda clean --all
 ```
 
