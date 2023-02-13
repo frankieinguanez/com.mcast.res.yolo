@@ -38,14 +38,14 @@ conda clean --all
 `python detect.py --weights yolov7.pt --conf 0.25 --img-size 640 --source inference/images/horses.jpg --device 0`
 
 # Troubleshooting
-- For memory issues open train.py in yolov7 and add the following code after line 479  as per https://github.com/WongKinYiu/yolov7/issues/735
+- [Memory Issues](https://github.com/WongKinYiu/yolov7/issues/735): For memory issues open train.py in yolov7 and add the following code after line 479:
 
 ```
 torch.cuda.empty_cache()
 gc.collect()
 ```
 
-- If getting queue empty error during train command set `--workers 0`
+- [Empty Queue](https://github.com/ultralytics/yolov5/issues/1675): If getting queue empty error during train command, set `--workers 0`
 
 - If getting MP: Error #15: Initializing libiomp5md.dll, but found libiomp5md.dll already initialized. There are two solutions: first installation of nomkl which should have already been done; secondly adding
 
