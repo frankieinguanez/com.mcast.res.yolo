@@ -75,3 +75,4 @@ os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
 
 # Useful links
 - [wandb](https://wandb.ai/)
+- [Deep dive in Yolov7](https://towardsdatascience.com/yolov7-a-deep-dive-into-the-current-state-of-the-art-for-object-detection-ce3ffedeeaeb)
