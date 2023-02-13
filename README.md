@@ -28,7 +28,8 @@ conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvi
 # Consider revising tensorboard version to <2.11 due to lack of native GPU support on Windows
 pip install -r requirements.txt
 pip install "tensorflow<2.11"
-conda install -c conda-forge nomkl
+conda install -c conda-forge wandb
+conda install -c conda-forge nomkl # This is due to an error documented below. It will find conflicst and take long. Consider without first.
 conda clean --all
 ```
 
