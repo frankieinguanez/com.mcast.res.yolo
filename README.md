@@ -19,7 +19,7 @@ Configuration for Yolov7
 
 - In command prompt check cuda version by running `nvcc -V`
 - Go to [PyTorch](https://pytorch.org/get-started/locally/) to get the command for your compatible version. Revise conda environment command below.
-- Create conda environment
+- Open an Anaconda Prompt as administrator and create conda environment
 
 ```
 conda create --name yolo python=3.10
