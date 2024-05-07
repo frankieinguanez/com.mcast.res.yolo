@@ -28,9 +28,3 @@ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.o
 - To verify native GPU support run ```test_pu.py``` within the python environment like this: ```.\yolo_v8\Scripts\python.exe test_py.py```.
 
 - To test YOLO download the nano weights and run: ```yolo predict model=yolov8n.pt source='https://ultralytics.com/images/bus.jpg'```.
-
-
-# Useful links
-- [wandb](https://wandb.ai/)
-- [Deep dive in Yolov7](https://towardsdatascience.com/yolov7-a-deep-dive-into-the-current-state-of-the-art-for-object-detection-ce3ffedeeaeb)
-- [Google Remote Desktop](https://remotedesktop.google.com/)
