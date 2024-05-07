@@ -1,0 +1,7 @@
+python -m venv yolo_v8
+.\yolo_v8\Scripts\activate
+pip install ultralytics
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+pip install jupyter
+ipython kernel install --name "yolo_v8-kernel" --user
+.\yolo_v8\Scripts\deactivate
